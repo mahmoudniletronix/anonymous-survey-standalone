@@ -1,0 +1,52 @@
+<svg
+  class="block shrink-0"
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  [attr.width]="size()"
+  [attr.height]="size()"
+  [attr.stroke-width]="strokeWidth()"
+  [attr.aria-hidden]="decorative()"
+>
+  @for (node of nodes(); track node.id) {
+    @switch (node.tag) {
+      @case ('path') {
+        <path [attr.d]="node.attrs['d']" />
+      }
+      @case ('circle') {
+        <circle
+          [attr.cx]="node.attrs['cx']"
+          [attr.cy]="node.attrs['cy']"
+          [attr.r]="node.attrs['r']"
+        />
+      }
+      @case ('rect') {
+        <rect
+          [attr.x]="node.attrs['x']"
+          [attr.y]="node.attrs['y']"
+          [attr.width]="node.attrs['width']"
+          [attr.height]="node.attrs['height']"
+          [attr.rx]="node.attrs['rx']"
+          [attr.ry]="node.attrs['ry']"
+        />
+      }
+      @case ('line') {
+        <line
+          [attr.x1]="node.attrs['x1']"
+          [attr.y1]="node.attrs['y1']"
+          [attr.x2]="node.attrs['x2']"
+          [attr.y2]="node.attrs['y2']"
+        />
+      }
+      @case ('polyline') {
+        <polyline [attr.points]="node.attrs['points']" />
+      }
+      @case ('polygon') {
+        <polygon [attr.points]="node.attrs['points']" />
+      }
+    }
+  }
+</svg>

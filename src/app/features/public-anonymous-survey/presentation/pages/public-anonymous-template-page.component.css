@@ -1,0 +1,139 @@
+:host {
+  display: block;
+}
+
+.public-survey-enter {
+  animation: public-survey-rise 420ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+
+.public-survey-question {
+  position: relative;
+  animation: public-survey-rise 380ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+
+.public-survey-wizard {
+  position: relative;
+}
+
+.public-star-rating-button {
+  isolation: isolate;
+}
+
+.public-star-rating-button::after {
+  content: "";
+  position: absolute;
+  inset: 0.35rem;
+  z-index: -1;
+  border-radius: 0.5rem;
+  background: radial-gradient(circle, rgba(245, 158, 11, 0.22), transparent 68%);
+  opacity: 0;
+  transform: scale(0.6);
+}
+
+.public-star-rating-button app-icon {
+  transition:
+    color 180ms ease,
+    transform 180ms ease,
+    filter 180ms ease;
+}
+
+.public-star-rating-button:hover app-icon {
+  transform: scale(1.12) rotate(-8deg);
+}
+
+.public-star-rating-button-selected {
+  animation: public-star-rating-pop 360ms cubic-bezier(0.2, 0.85, 0.25, 1.25) both;
+}
+
+.public-star-rating-button-selected::after {
+  animation: public-star-rating-glow 520ms ease-out both;
+}
+
+.public-star-rating-button-selected app-icon {
+  color: #d97706;
+  filter: drop-shadow(0 4px 8px rgba(217, 119, 6, 0.24));
+  animation: public-star-icon-spark 520ms ease-out both;
+}
+
+.public-survey-question:nth-child(2) {
+  animation-delay: 55ms;
+}
+
+.public-survey-question:nth-child(3) {
+  animation-delay: 110ms;
+}
+
+.public-survey-question:nth-child(4) {
+  animation-delay: 165ms;
+}
+
+@keyframes public-survey-rise {
+  from {
+    opacity: 0;
+    transform: translateY(0.45rem);
+  }
+
+  to {
+    opacity: 1;
+  transform: translateY(0);
+  }
+}
+
+@keyframes public-star-rating-pop {
+  0% {
+    transform: scale(1);
+  }
+
+  45% {
+    transform: scale(1.12);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes public-star-rating-glow {
+  0% {
+    opacity: 0;
+    transform: scale(0.45);
+  }
+
+  45% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(1.35);
+  }
+}
+
+@keyframes public-star-icon-spark {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+
+  35% {
+    transform: scale(1.28) rotate(-12deg);
+  }
+
+  70% {
+    transform: scale(0.96) rotate(8deg);
+  }
+
+  100% {
+    transform: scale(1.08) rotate(0deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .public-survey-enter,
+  .public-survey-question,
+  .public-star-rating-button-selected,
+  .public-star-rating-button-selected::after,
+  .public-star-rating-button-selected app-icon {
+    animation: none;
+  }
+}

@@ -1,0 +1,351 @@
+[33m>[39m Building...
+[32m√[39m Building...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m                                           [2m | [22m [1mRaw size[22m
+[32mchunk-7P2YCZAW.js[39m  [2m | [22m[2m-[22m                                               [2m | [22m [36m97.43 kB[39m[2m | [22m
+[32mchunk-HQUMLKBP.js[39m  [2m | [22m[2m-[22m                                               [2m | [22m [36m34.29 kB[39m[2m | [22m
+[32mstyles.css[39m         [2m | [22m[2mstyles[22m                                          [2m | [22m [36m30.74 kB[39m[2m | [22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m                                            [2m | [22m  [36m2.98 kB[39m[2m | [22m
+
+[1m [22m                  [2m | [22m[1mInitial total[22m                                   [2m | [22m[1m165.43 kB[22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m                                           [2m | [22m [1mRaw size[22m
+[32mchunk-O5MZTGDV.js[39m  [2m | [22m[2mpublic-anonymous-template-success-page-component[22m[2m | [22m  [36m6.48 kB[39m[2m | [22m
+[32mchunk-VLTYGEHA.js[39m  [2m | [22m[2mpublic-anonymous-survey-routes[22m                  [2m | [22m[36m680 bytes[39m[2m | [22m
+
+Application bundle generation complete. [6.656 seconds] - 2026-06-01T11:37:45.559Z
+
+Watch mode enabled. Watching for file changes...
+NOTE: Raw file sizes do not reflect development server per-request transformations.
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m4200[22m/[39m
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+Application bundle generation failed. [1.637 seconds] - 2026-06-01T11:38:47.405Z
+
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m                                           [2m | [22m [1mRaw size[22m
+[32mchunk-XOEL3UCU.js[39m  [2m | [22m[2m-[22m                                               [2m | [22m [36m98.06 kB[39m[2m | [22m
+[32mchunk-HQUMLKBP.js[39m  [2m | [22m[2m-[22m                                               [2m | [22m [36m34.29 kB[39m[2m | [22m
+[32mstyles.css[39m         [2m | [22m[2mstyles[22m                                          [2m | [22m [36m30.74 kB[39m[2m | [22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m                                            [2m | [22m  [36m2.98 kB[39m[2m | [22m
+
+[1m [22m                  [2m | [22m[1mInitial total[22m                                   [2m | [22m[1m166.06 kB[22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m                                           [2m | [22m [1mRaw size[22m
+[32mchunk-O5MZTGDV.js[39m  [2m | [22m[2mpublic-anonymous-template-success-page-component[22m[2m | [22m  [36m6.48 kB[39m[2m | [22m
+[32mchunk-SJM7EYER.js[39m  [2m | [22m[2mpublic-anonymous-survey-routes[22m                  [2m | [22m[36m680 bytes[39m[2m | [22m
+
+Application bundle generation complete. [1.258 seconds] - 2026-06-01T11:38:55.586Z
+
+Page reload sent to client(s).
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m                         [2m | [22m [1mRaw size[22m
+[32mchunk-UBU254ZF.js[39m  [2m | [22m[2m-[22m                             [2m | [22m [36m98.13 kB[39m[2m | [22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m                          [2m | [22m  [36m2.98 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m                         [2m | [22m [1mRaw size[22m
+[32mchunk-NQJIMXDZ.js[39m  [2m | [22m[2mpublic-anonymous-survey-routes[22m[2m | [22m[36m680 bytes[39m[2m | [22m
+
+Application bundle generation complete. [1.160 seconds] - 2026-06-01T11:39:03.341Z
+
+Page reload sent to client(s).
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m                         [2m | [22m [1mRaw size[22m
+[32mchunk-LYEOMAFQ.js[39m  [2m | [22m[2m-[22m                             [2m | [22m [36m98.19 kB[39m[2m | [22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m                          [2m | [22m  [36m2.98 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m                         [2m | [22m [1mRaw size[22m
+[32mchunk-RHDUSIYF.js[39m  [2m | [22m[2mpublic-anonymous-survey-routes[22m[2m | [22m[36m680 bytes[39m[2m | [22m
+
+Application bundle generation complete. [1.070 seconds] - 2026-06-01T11:39:10.765Z
+
+Component update sent to client(s).
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+Application bundle generation failed. [2.353 seconds] - 2026-06-01T11:43:36.221Z
+
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+Application bundle generation failed. [1.728 seconds] - 2026-06-01T11:43:47.861Z
+
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+Application bundle generation failed. [0.982 seconds] - 2026-06-01T11:43:56.114Z
+
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+Application bundle generation failed. [1.109 seconds] - 2026-06-01T11:44:02.521Z
+
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+Application bundle generation failed. [1.138 seconds] - 2026-06-01T11:44:23.895Z
+
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+Application bundle generation failed. [1.116 seconds] - 2026-06-01T11:44:29.680Z
+
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+Application bundle generation failed. [1.193 seconds] - 2026-06-01T11:44:47.843Z
+
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+Application bundle generation failed. [1.247 seconds] - 2026-06-01T11:44:59.162Z
+
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m                                           [2m | [22m [1mRaw size[22m
+[32mchunk-5IN3OQRG.js[39m  [2m | [22m[2m-[22m                                               [2m | [22m[36m106.45 kB[39m[2m | [22m
+[32mchunk-HQUMLKBP.js[39m  [2m | [22m[2m-[22m                                               [2m | [22m [36m34.29 kB[39m[2m | [22m
+[32mstyles.css[39m         [2m | [22m[2mstyles[22m                                          [2m | [22m [36m30.74 kB[39m[2m | [22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m                                            [2m | [22m  [36m2.98 kB[39m[2m | [22m
+
+[1m [22m                  [2m | [22m[1mInitial total[22m                                   [2m | [22m[1m174.45 kB[22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m                                           [2m | [22m [1mRaw size[22m
+[32mchunk-O5MZTGDV.js[39m  [2m | [22m[2mpublic-anonymous-template-success-page-component[22m[2m | [22m  [36m6.48 kB[39m[2m | [22m
+[32mchunk-V4UQ5XLJ.js[39m  [2m | [22m[2mpublic-anonymous-survey-routes[22m                  [2m | [22m[36m680 bytes[39m[2m | [22m
+
+Application bundle generation complete. [1.122 seconds] - 2026-06-01T11:45:06.022Z
+
+Page reload sent to client(s).
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m                         [2m | [22m [1mRaw size[22m
+[32mchunk-MCWH6ZVV.js[39m  [2m | [22m[2m-[22m                             [2m | [22m[36m106.54 kB[39m[2m | [22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m                          [2m | [22m  [36m2.98 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m                         [2m | [22m [1mRaw size[22m
+[32mchunk-QUM4KDZS.js[39m  [2m | [22m[2mpublic-anonymous-survey-routes[22m[2m | [22m[36m680 bytes[39m[2m | [22m
+
+Application bundle generation complete. [1.210 seconds] - 2026-06-01T11:45:13.666Z
+
+Page reload sent to client(s).
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m                         [2m | [22m [1mRaw size[22m
+[32mchunk-DXOZL7JP.js[39m  [2m | [22m[2m-[22m                             [2m | [22m[36m118.14 kB[39m[2m | [22m
+[32mstyles.css[39m         [2m | [22m[2mstyles[22m                        [2m | [22m [36m31.32 kB[39m[2m | [22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m                          [2m | [22m  [36m2.98 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m                         [2m | [22m [1mRaw size[22m
+[32mchunk-CDT2MEQN.js[39m  [2m | [22m[2mpublic-anonymous-survey-routes[22m[2m | [22m[36m680 bytes[39m[2m | [22m
+
+Application bundle generation complete. [0.922 seconds] - 2026-06-01T11:45:41.609Z
+
+Stylesheet update sent to client(s).
+Component update sent to client(s).
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m                         [2m | [22m [1mRaw size[22m
+[32mchunk-SWTX6PRS.js[39m  [2m | [22m[2m-[22m                             [2m | [22m[36m118.20 kB[39m[2m | [22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m                          [2m | [22m  [36m2.98 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m                         [2m | [22m [1mRaw size[22m
+[32mchunk-DYD7GA7Q.js[39m  [2m | [22m[2mpublic-anonymous-survey-routes[22m[2m | [22m[36m680 bytes[39m[2m | [22m
+
+Application bundle generation complete. [1.229 seconds] - 2026-06-01T11:45:47.831Z
+
+Component update sent to client(s).
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m                                           [2m | [22m [1mRaw size[22m
+[32mchunk-JAX4FQJB.js[39m  [2m | [22m[2m-[22m                                               [2m | [22m[36m118.20 kB[39m[2m | [22m
+[32mchunk-4HFOGOSZ.js[39m  [2m | [22m[2m-[22m                                               [2m | [22m [36m36.75 kB[39m[2m | [22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m                                            [2m | [22m  [36m2.98 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m                                           [2m | [22m [1mRaw size[22m
+[32mchunk-V4AKO6EN.js[39m  [2m | [22m[2mpublic-anonymous-template-success-page-component[22m[2m | [22m  [36m6.48 kB[39m[2m | [22m
+[32mchunk-W3LMRGQL.js[39m  [2m | [22m[2mpublic-anonymous-survey-routes[22m                  [2m | [22m[36m680 bytes[39m[2m | [22m
+
+Application bundle generation complete. [1.107 seconds] - 2026-06-01T11:46:08.308Z
+
+Page reload sent to client(s).
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m                         [2m | [22m [1mRaw size[22m
+[32mchunk-WRNTONHX.js[39m  [2m | [22m[2m-[22m                             [2m | [22m[36m119.17 kB[39m[2m | [22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m                          [2m | [22m  [36m2.98 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m                         [2m | [22m [1mRaw size[22m
+[32mchunk-CH43ZQYO.js[39m  [2m | [22m[2mpublic-anonymous-survey-routes[22m[2m | [22m[36m680 bytes[39m[2m | [22m
+
+Application bundle generation complete. [1.132 seconds] - 2026-06-01T11:48:49.988Z
+
+Page reload sent to client(s).
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m                         [2m | [22m [1mRaw size[22m
+[32mchunk-EWEWMJBE.js[39m  [2m | [22m[2m-[22m                             [2m | [22m[36m119.60 kB[39m[2m | [22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m                          [2m | [22m  [36m2.98 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m                         [2m | [22m [1mRaw size[22m
+[32mchunk-AUUJF45R.js[39m  [2m | [22m[2mpublic-anonymous-survey-routes[22m[2m | [22m[36m680 bytes[39m[2m | [22m
+
+Application bundle generation complete. [1.488 seconds] - 2026-06-01T11:48:59.952Z
+
+Page reload sent to client(s).
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m                         [2m | [22m [1mRaw size[22m
+[32mchunk-V56JCIPQ.js[39m  [2m | [22m[2m-[22m                             [2m | [22m[36m120.02 kB[39m[2m | [22m
+[32mstyles.css[39m         [2m | [22m[2mstyles[22m                        [2m | [22m [36m32.02 kB[39m[2m | [22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m                          [2m | [22m  [36m2.98 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m                         [2m | [22m [1mRaw size[22m
+[32mchunk-NYMBJGYB.js[39m  [2m | [22m[2mpublic-anonymous-survey-routes[22m[2m | [22m[36m680 bytes[39m[2m | [22m
+
+Application bundle generation complete. [1.178 seconds] - 2026-06-01T11:49:07.969Z
+
+Stylesheet update sent to client(s).
+Component update sent to client(s).
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m                         [2m | [22m [1mRaw size[22m
+[32mchunk-TZ6LC3A5.js[39m  [2m | [22m[2m-[22m                             [2m | [22m[36m120.41 kB[39m[2m | [22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m                          [2m | [22m  [36m2.98 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m                         [2m | [22m [1mRaw size[22m
+[32mchunk-EC332BPG.js[39m  [2m | [22m[2mpublic-anonymous-survey-routes[22m[2m | [22m[36m680 bytes[39m[2m | [22m
+
+Application bundle generation complete. [1.921 seconds] - 2026-06-01T11:51:16.782Z
+
+Page reload sent to client(s).
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+Application bundle generation failed. [1.323 seconds] - 2026-06-01T11:51:28.809Z
+
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m                                           [2m | [22m [1mRaw size[22m
+[32mchunk-BN53HJ77.js[39m  [2m | [22m[2m-[22m                                               [2m | [22m[36m120.40 kB[39m[2m | [22m
+[32mchunk-4HFOGOSZ.js[39m  [2m | [22m[2m-[22m                                               [2m | [22m [36m36.75 kB[39m[2m | [22m
+[32mstyles.css[39m         [2m | [22m[2mstyles[22m                                          [2m | [22m [36m32.02 kB[39m[2m | [22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m                                            [2m | [22m  [36m2.98 kB[39m[2m | [22m
+
+[1m [22m                  [2m | [22m[1mInitial total[22m                                   [2m | [22m[1m192.15 kB[22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m                                           [2m | [22m [1mRaw size[22m
+[32mchunk-V4AKO6EN.js[39m  [2m | [22m[2mpublic-anonymous-template-success-page-component[22m[2m | [22m  [36m6.48 kB[39m[2m | [22m
+[32mchunk-DQBMZ2DB.js[39m  [2m | [22m[2mpublic-anonymous-survey-routes[22m                  [2m | [22m[36m680 bytes[39m[2m | [22m
+
+Application bundle generation complete. [1.295 seconds] - 2026-06-01T11:51:36.143Z
+
+Page reload sent to client(s).
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m                         [2m | [22m [1mRaw size[22m
+[32mchunk-M5I75AWC.js[39m  [2m | [22m[2m-[22m                             [2m | [22m[36m120.08 kB[39m[2m | [22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m                          [2m | [22m  [36m2.98 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m                         [2m | [22m [1mRaw size[22m
+[32mchunk-F666WEFY.js[39m  [2m | [22m[2mpublic-anonymous-survey-routes[22m[2m | [22m[36m680 bytes[39m[2m | [22m
+
+Application bundle generation complete. [1.457 seconds] - 2026-06-01T11:52:57.554Z
+
+Component update sent to client(s).
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m                         [2m | [22m [1mRaw size[22m
+[32mchunk-K4PL2KNO.js[39m  [2m | [22m[2m-[22m                             [2m | [22m[36m120.59 kB[39m[2m | [22m
+[32mstyles.css[39m         [2m | [22m[2mstyles[22m                        [2m | [22m [36m32.07 kB[39m[2m | [22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m                          [2m | [22m  [36m2.98 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m                         [2m | [22m [1mRaw size[22m
+[32mchunk-YGF4A3LV.js[39m  [2m | [22m[2mpublic-anonymous-survey-routes[22m[2m | [22m[36m680 bytes[39m[2m | [22m
+
+Application bundle generation complete. [1.240 seconds] - 2026-06-01T11:53:51.667Z
+
+Stylesheet update sent to client(s).
+Component update sent to client(s).
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m                         [2m | [22m [1mRaw size[22m
+[32mchunk-MADH347Z.js[39m  [2m | [22m[2m-[22m                             [2m | [22m[36m124.52 kB[39m[2m | [22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m                          [2m | [22m  [36m2.98 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m                         [2m | [22m [1mRaw size[22m
+[32mchunk-3E5N2G4Y.js[39m  [2m | [22m[2mpublic-anonymous-survey-routes[22m[2m | [22m[36m680 bytes[39m[2m | [22m
+
+Application bundle generation complete. [1.211 seconds] - 2026-06-01T11:54:11.696Z
+
+Component update sent to client(s).
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+Application bundle generation failed. [1.342 seconds] - 2026-06-01T12:07:10.997Z
+
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+Application bundle generation failed. [1.121 seconds] - 2026-06-01T12:07:30.723Z
+
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m                                           [2m | [22m [1mRaw size[22m
+[32mchunk-I3X3ZXUP.js[39m  [2m | [22m[2m-[22m                                               [2m | [22m[36m126.59 kB[39m[2m | [22m
+[32mchunk-4HFOGOSZ.js[39m  [2m | [22m[2m-[22m                                               [2m | [22m [36m36.75 kB[39m[2m | [22m
+[32mstyles.css[39m         [2m | [22m[2mstyles[22m                                          [2m | [22m [36m32.07 kB[39m[2m | [22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m                                            [2m | [22m  [36m2.98 kB[39m[2m | [22m
+
+[1m [22m                  [2m | [22m[1mInitial total[22m                                   [2m | [22m[1m198.39 kB[22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m                                           [2m | [22m [1mRaw size[22m
+[32mchunk-V4AKO6EN.js[39m  [2m | [22m[2mpublic-anonymous-template-success-page-component[22m[2m | [22m  [36m6.48 kB[39m[2m | [22m
+[32mchunk-5BAKIO73.js[39m  [2m | [22m[2mpublic-anonymous-survey-routes[22m                  [2m | [22m[36m680 bytes[39m[2m | [22m
+
+Application bundle generation complete. [1.275 seconds] - 2026-06-01T12:07:43.443Z
+
+Page reload sent to client(s).
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m                         [2m | [22m [1mRaw size[22m
+[32mchunk-PPJLHKW2.js[39m  [2m | [22m[2m-[22m                             [2m | [22m[36m131.76 kB[39m[2m | [22m
+[32mstyles.css[39m         [2m | [22m[2mstyles[22m                        [2m | [22m [36m32.11 kB[39m[2m | [22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m                          [2m | [22m  [36m2.98 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m                         [2m | [22m [1mRaw size[22m
+[32mchunk-NA4RS2XW.js[39m  [2m | [22m[2mpublic-anonymous-survey-routes[22m[2m | [22m[36m680 bytes[39m[2m | [22m
+
+Application bundle generation complete. [1.170 seconds] - 2026-06-01T12:08:22.066Z
+
+Stylesheet update sent to client(s).
+Component update sent to client(s).
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m                                           [2m | [22m [1mRaw size[22m
+[32mchunk-XQR6QFOS.js[39m  [2m | [22m[2m-[22m                                               [2m | [22m[36m131.76 kB[39m[2m | [22m
+[32mchunk-XG55OX6A.js[39m  [2m | [22m[2m-[22m                                               [2m | [22m [36m37.30 kB[39m[2m | [22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m                                            [2m | [22m  [36m2.98 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m                                           [2m | [22m [1mRaw size[22m
+[32mchunk-AEAJJNRR.js[39m  [2m | [22m[2mpublic-anonymous-template-success-page-component[22m[2m | [22m  [36m6.48 kB[39m[2m | [22m
+[32mchunk-KQRDJQKC.js[39m  [2m | [22m[2mpublic-anonymous-survey-routes[22m                  [2m | [22m[36m680 bytes[39m[2m | [22m
+
+Application bundle generation complete. [0.857 seconds] - 2026-06-01T12:09:02.321Z
+
+Page reload sent to client(s).
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m                         [2m | [22m [1mRaw size[22m
+[32mchunk-RIOQHZXZ.js[39m  [2m | [22m[2m-[22m                             [2m | [22m[36m131.84 kB[39m[2m | [22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m                          [2m | [22m  [36m2.98 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m                         [2m | [22m [1mRaw size[22m
+[32mchunk-SBJ426XR.js[39m  [2m | [22m[2mpublic-anonymous-survey-routes[22m[2m | [22m[36m680 bytes[39m[2m | [22m
+
+Application bundle generation complete. [1.258 seconds] - 2026-06-01T12:11:56.886Z
+
+Page reload sent to client(s).
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m                         [2m | [22m [1mRaw size[22m
+[32mchunk-JCUDKYWX.js[39m  [2m | [22m[2m-[22m                             [2m | [22m[36m135.40 kB[39m[2m | [22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m                          [2m | [22m  [36m2.98 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m                         [2m | [22m [1mRaw size[22m
+[32mchunk-XJ5GRFIV.js[39m  [2m | [22m[2mpublic-anonymous-survey-routes[22m[2m | [22m[36m680 bytes[39m[2m | [22m
+
+Application bundle generation complete. [1.195 seconds] - 2026-06-01T12:12:02.490Z
+
+Component update sent to client(s).

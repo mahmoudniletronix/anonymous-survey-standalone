@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap");
+@import "tailwindcss";
+
+:root {
+  color-scheme: light;
+  --color-primary: #11A7C9;
+  --color-sidebar: #1F3A56;
+  --color-accent: #D94B5A;
+  --color-background: #F7F9FC;
+}
+
+html,
+body {
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
+html {
+  font-size: 14px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--color-background);
+  color: #122033;
+  font-family: Cairo, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 13px;
+  line-height: 1.45;
+  direction: inherit;
+  text-align: start;
+}
+
+button:not(:disabled),
+a[href],
+[role="button"],
+.cursor-pointer {
+  cursor: pointer;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+input,
+select,
+textarea {
+  direction: inherit;
+}
+
+img,
+svg,
+video,
+canvas {
+  max-width: 100%;
+}
+
+@media (max-width: 640px) {
+  html {
+    font-size: 13px;
+  }
+
+  body {
+    font-size: 12px;
+  }
+}

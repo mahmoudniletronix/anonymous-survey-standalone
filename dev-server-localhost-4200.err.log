@@ -1,0 +1,157 @@
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'hasPotentialChildQuestion' does not exist on type 'PublicAnonymousTemplatePageComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/public-anonymous-survey/presentation/pages/public-anonymous-template-page.component.ts:124:13:
+[37m      124 │         this.[32mhasPotentialChildQuestion[37m(question))
+          ╵              [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2739: Type '{ selectedQuestionOptionId: string; starRatingValue: null; smileValue: null; textAnswer: string; voiceFileName: string; }' is missing the following properties from type 'PublicAnonymousAnswerDraft': voiceObjectUrl, voiceSource[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/public-anonymous-survey/presentation/pages/public-anonymous-template-page.component.ts:759:4:
+[37m      759 │     [32mreturn[37m {
+          ╵     [32m~~~~~~[0m
+
+[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2739: Type '{ selectedQuestionOptionId: string; starRatingValue: null; smileValue: null; textAnswer: string; voiceFileName: string; }' is missing the following properties from type 'PublicAnonymousAnswerDraft': voiceObjectUrl, voiceSource[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/public-anonymous-survey/presentation/pages/public-anonymous-template-page.component.ts:769:4:
+[37m      769 │     [32mreturn[37m {
+          ╵     [32m~~~~~~[0m
+
+[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2739: Type '{ selectedQuestionOptionId: string; starRatingValue: null; smileValue: null; textAnswer: string; voiceFileName: string; }' is missing the following properties from type 'PublicAnonymousAnswerDraft': voiceObjectUrl, voiceSource[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/public-anonymous-survey/presentation/pages/public-anonymous-template-page.component.ts:772:4:
+[37m      772 │     [32mreturn[37m {
+          ╵     [32m~~~~~~[0m
+
+[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'revokeAllVoiceObjectUrls' does not exist on type 'PublicAnonymousTemplatePageComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/public-anonymous-survey/presentation/pages/public-anonymous-template-page.component.ts:182:9:
+[37m      182 │     this.[32mrevokeAllVoiceObjectUrls[37m(this.answers());
+          ╵          [32m~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2739: Type '{ selectedQuestionOptionId: string; starRatingValue: null; smileValue: null; textAnswer: string; voiceFileName: string; }' is missing the following properties from type 'PublicAnonymousAnswerDraft': voiceObjectUrl, voiceSource[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/public-anonymous-survey/presentation/pages/public-anonymous-template-page.component.ts:774:4:
+[37m      774 │     [32mreturn[37m {
+          ╵     [32m~~~~~~[0m
+
+[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'revokeAllVoiceObjectUrls' does not exist on type 'PublicAnonymousTemplatePageComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/public-anonymous-survey/presentation/pages/public-anonymous-template-page.component.ts:182:9:
+[37m      182 │     this.[32mrevokeAllVoiceObjectUrls[37m(this.answers());
+          ╵          [32m~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2739: Type '{ selectedQuestionOptionId: string; starRatingValue: null; smileValue: null; textAnswer: string; voiceFileName: string; }' is missing the following properties from type 'PublicAnonymousAnswerDraft': voiceObjectUrl, voiceSource[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/public-anonymous-survey/presentation/pages/public-anonymous-template-page.component.ts:826:4:
+[37m      826 │     [32mreturn[37m {
+          ╵     [32m~~~~~~[0m
+
+[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'revokeAllVoiceObjectUrls' does not exist on type 'PublicAnonymousTemplatePageComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/public-anonymous-survey/presentation/pages/public-anonymous-template-page.component.ts:182:9:
+[37m      182 │     this.[32mrevokeAllVoiceObjectUrls[37m(this.answers());
+          ╵          [32m~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2739: Type '{ selectedQuestionOptionId: string; starRatingValue: null; smileValue: null; textAnswer: string; voiceFileName: string; }' is missing the following properties from type 'PublicAnonymousAnswerDraft': voiceObjectUrl, voiceSource[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/public-anonymous-survey/presentation/pages/public-anonymous-template-page.component.ts:830:4:
+[37m      830 │     [32mreturn[37m {
+          ╵     [32m~~~~~~[0m
+
+[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'revokeAllVoiceObjectUrls' does not exist on type 'PublicAnonymousTemplatePageComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/public-anonymous-survey/presentation/pages/public-anonymous-template-page.component.ts:182:9:
+[37m      182 │     this.[32mrevokeAllVoiceObjectUrls[37m(this.answers());
+          ╵          [32m~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'revokeVoiceObjectUrl' does not exist on type 'PublicAnonymousTemplatePageComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/public-anonymous-survey/presentation/pages/public-anonymous-template-page.component.ts:628:11:
+[37m      628 │       this.[32mrevokeVoiceObjectUrl[37m(previousAnswer.voiceObjectUrl);
+          ╵            [32m~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'revokeRemovedVoiceObjectUrls' does not exist on type 'PublicAnonymousTemplatePageComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/public-anonymous-survey/presentation/pages/public-anonymous-template-page.component.ts:647:11:
+[37m      647 │       this.[32mrevokeRemovedVoiceObjectUrls[37m(answers, nextAnswers);
+          ╵            [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2739: Type '{ selectedQuestionOptionId: string; starRatingValue: null; smileValue: null; textAnswer: string; voiceFileName: string; }' is missing the following properties from type 'PublicAnonymousAnswerDraft': voiceObjectUrl, voiceSource[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/public-anonymous-survey/presentation/pages/public-anonymous-template-page.component.ts:840:4:
+[37m      840 │     [32mreturn[37m {
+          ╵     [32m~~~~~~[0m
+
+[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2739: Type '{ selectedQuestionOptionId: string; starRatingValue: null; smileValue: null; textAnswer: string; voiceFileName: string; }' is missing the following properties from type 'PublicAnonymousAnswerDraft': voiceObjectUrl, voiceSource[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/public-anonymous-survey/presentation/pages/public-anonymous-template-page.component.ts:870:4:
+[37m      870 │     [32mreturn[37m {
+          ╵     [32m~~~~~~[0m
+
+[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'previousIcon' does not exist on type 'PublicAnonymousTemplatePageComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/public-anonymous-survey/presentation/pages/public-anonymous-template-page.component.html:379:36:
+[37m      379 │                   <app-icon [icon]="[32mpreviousIcon[37m" [size]="15" />
+          ╵                                     [32m~~~~~~~~~~~~[0m
+
+  Error occurs in the template of component PublicAnonymousTemplatePageComponent.
+
+    src/app/features/public-anonymous-survey/presentation/pages/public-anonymous-template-page.component.ts:55:15:
+[37m      55 │   templateUrl: [32m"./public-anonymous-template-page.component.html"[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'nextIcon' does not exist on type 'PublicAnonymousTemplatePageComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/public-anonymous-survey/presentation/pages/public-anonymous-template-page.component.html:391:38:
+[37m      391 │                     <app-icon [icon]="[32mnextIcon[37m" [size]="15" />
+          ╵                                       [32m~~~~~~~~[0m
+
+  Error occurs in the template of component PublicAnonymousTemplatePageComponent.
+
+    src/app/features/public-anonymous-survey/presentation/pages/public-anonymous-template-page.component.ts:55:15:
+[37m      55 │   templateUrl: [32m"./public-anonymous-template-page.component.html"[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2551: Property 'hasDetailsStep' does not exist on type 'PublicAnonymousTemplatePageComponent'. Did you mean 'isDetailsStep'?[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/public-anonymous-survey/presentation/pages/public-anonymous-template-page.component.ts:148:54:
+[37m      148 │ ...this.currentVisibleQuestionIndex() > 0 || this.[32mhasDetailsStep[37m()),
+          ╵                                                   [32m~~~~~~~~~~~~~~[0m
+
+  'isDetailsStep' is declared here.
+
+    src/app/features/public-anonymous-survey/presentation/pages/public-anonymous-template-page.component.ts:131:11:
+[37m      131 │   readonly [32misDetailsStep[37m = computed(() => {
+          ╵            [32m~~~~~~~~~~~~~[0m
+
+[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2551: Property 'areCustomInputsValid' does not exist on type 'PublicAnonymousTemplatePageComponent'. Did you mean 'customInputValue'?[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/features/public-anonymous-survey/presentation/pages/public-anonymous-template-page.component.ts:485:14:
+[37m      485 │     if (!this.[32mareCustomInputsValid[37m(template)) {
+          ╵               [32m~~~~~~~~~~~~~~~~~~~~[0m
+
+  'customInputValue' is declared here.
+
+    src/app/features/public-anonymous-survey/presentation/pages/public-anonymous-template-page.component.ts:265:2:
+[37m      265 │   [32mcustomInputValue[37m(input: PublicAnonymousTemplateCustomInput): st...
+          ╵   [32m~~~~~~~~~~~~~~~~[0m
+
+[39m[22m
