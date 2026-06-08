@@ -137,6 +137,17 @@ export class PublicAnonymousTemplateStore {
     const resourceKey = this.readResourceKey(error);
     const normalizedKey = resourceKey.replace(/[\s_.-]/g, '').toLowerCase();
 
+    if (normalizedKey.includes('image')) {
+      if (
+        normalizedKey.includes('required') ||
+        normalizedKey.includes('missing') ||
+        normalizedKey.includes('empty')
+      ) {
+        return 'publicAnonymousTemplates.imageRequired';
+      }
+
+      return 'publicAnonymousTemplates.imageFileInvalid';
+    }
     if (normalizedKey.includes('hidden') && normalizedKey.includes('answer')) {
       return 'publicAnonymousTemplates.hiddenAnswersRejected';
     }

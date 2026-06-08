@@ -3,8 +3,8 @@ import { Injectable, inject } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 
 const PUBLIC_SURVEY_TITLE = 'Cleopatra Feedback Survey';
-const PUBLIC_SURVEY_FAVICON_HREF = 'images/favicon.ico';
-const PUBLIC_SURVEY_FAVICON_TYPE = 'image/x-icon';
+const PUBLIC_SURVEY_FAVICON_HREF = 'images/chg-logo.png';
+const PUBLIC_SURVEY_FAVICON_TYPE = 'image/png';
 
 interface BrowserTabBranding {
   readonly title: string;

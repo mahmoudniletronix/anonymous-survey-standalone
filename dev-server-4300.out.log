@@ -1,0 +1,121 @@
+
+> anonymous-survey-standalone@0.0.0 start
+> ng serve --host 127.0.0.1 --port 4300
+
+[33m>[39m Building...
+[32m√[39m Building...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m                                           [2m | [22m [1mRaw size[22m
+[32mchunk-7WRLMLHI.js[39m  [2m | [22m[2m-[22m                                               [2m | [22m[36m151.43 kB[39m[2m | [22m
+[32mchunk-7J2J3XYT.js[39m  [2m | [22m[2m-[22m                                               [2m | [22m [36m39.63 kB[39m[2m | [22m
+[32mstyles.css[39m         [2m | [22m[2mstyles[22m                                          [2m | [22m [36m32.57 kB[39m[2m | [22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m                                            [2m | [22m  [36m2.98 kB[39m[2m | [22m
+
+[1m [22m                  [2m | [22m[1mInitial total[22m                                   [2m | [22m[1m226.60 kB[22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m                                           [2m | [22m [1mRaw size[22m
+[32mchunk-QKDUIA2W.js[39m  [2m | [22m[2mpublic-anonymous-template-success-page-component[22m[2m | [22m  [36m6.48 kB[39m[2m | [22m
+[32mchunk-AODHESOS.js[39m  [2m | [22m[2mpublic-anonymous-survey-routes[22m                  [2m | [22m[36m680 bytes[39m[2m | [22m
+
+Application bundle generation complete. [5.914 seconds] - 2026-06-08T11:55:24.593Z
+
+Watch mode enabled. Watching for file changes...
+NOTE: Raw file sizes do not reflect development server per-request transformations.
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://127.0.0.1:[1m4300[22m/[39m
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m                         [2m | [22m [1mRaw size[22m
+[32mchunk-APHLB4A3.js[39m  [2m | [22m[2m-[22m                             [2m | [22m[36m151.49 kB[39m[2m | [22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m                          [2m | [22m  [36m2.98 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m                         [2m | [22m [1mRaw size[22m
+[32mchunk-TJ5M2NFL.js[39m  [2m | [22m[2mpublic-anonymous-survey-routes[22m[2m | [22m[36m680 bytes[39m[2m | [22m
+
+Application bundle generation complete. [1.660 seconds] - 2026-06-08T11:56:01.752Z
+
+Page reload sent to client(s).
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m                         [2m | [22m [1mRaw size[22m
+[32mchunk-E2YYS3ZI.js[39m  [2m | [22m[2m-[22m                             [2m | [22m[36m151.52 kB[39m[2m | [22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m                          [2m | [22m  [36m2.98 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m                         [2m | [22m [1mRaw size[22m
+[32mchunk-E7QVCHW5.js[39m  [2m | [22m[2mpublic-anonymous-survey-routes[22m[2m | [22m[36m680 bytes[39m[2m | [22m
+
+Application bundle generation complete. [1.415 seconds] - 2026-06-08T11:59:35.106Z
+
+Page reload sent to client(s).
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m                         [2m | [22m [1mRaw size[22m
+[32mchunk-O27TUHYJ.js[39m  [2m | [22m[2m-[22m                             [2m | [22m[36m153.85 kB[39m[2m | [22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m                          [2m | [22m  [36m2.98 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m                         [2m | [22m [1mRaw size[22m
+[32mchunk-V646TIOA.js[39m  [2m | [22m[2mpublic-anonymous-survey-routes[22m[2m | [22m[36m680 bytes[39m[2m | [22m
+
+Application bundle generation complete. [1.207 seconds] - 2026-06-08T11:59:50.201Z
+
+Component update sent to client(s).
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m                                           [2m | [22m [1mRaw size[22m
+[32mchunk-TL5QWH6T.js[39m  [2m | [22m[2m-[22m                                               [2m | [22m[36m153.85 kB[39m[2m | [22m
+[32mchunk-LIS5SUUZ.js[39m  [2m | [22m[2m-[22m                                               [2m | [22m [36m39.79 kB[39m[2m | [22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m                                            [2m | [22m  [36m2.98 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m                                           [2m | [22m [1mRaw size[22m
+[32mchunk-RQWD2D3E.js[39m  [2m | [22m[2mpublic-anonymous-template-success-page-component[22m[2m | [22m  [36m6.48 kB[39m[2m | [22m
+[32mchunk-Z5CWROTP.js[39m  [2m | [22m[2mpublic-anonymous-survey-routes[22m                  [2m | [22m[36m680 bytes[39m[2m | [22m
+
+Application bundle generation complete. [1.300 seconds] - 2026-06-08T12:00:04.408Z
+
+Page reload sent to client(s).
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m                         [2m | [22m [1mRaw size[22m
+[32mchunk-ZAXOCOLY.js[39m  [2m | [22m[2m-[22m                             [2m | [22m[36m153.82 kB[39m[2m | [22m
+[32mstyles.css[39m         [2m | [22m[2mstyles[22m                        [2m | [22m [36m32.71 kB[39m[2m | [22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m                          [2m | [22m  [36m2.98 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m                         [2m | [22m [1mRaw size[22m
+[32mchunk-MRIDMGJO.js[39m  [2m | [22m[2mpublic-anonymous-survey-routes[22m[2m | [22m[36m680 bytes[39m[2m | [22m
+
+Application bundle generation complete. [1.343 seconds] - 2026-06-08T12:28:54.274Z
+
+Page reload sent to client(s).
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+
+No output file changes.
+
+Application bundle generation complete. [0.075 seconds] - 2026-06-08T12:29:01.991Z
+
+Page reload sent to client(s).
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m                                           [2m | [22m [1mRaw size[22m
+[32mchunk-I4BZSI6Q.js[39m  [2m | [22m[2m-[22m                                               [2m | [22m[36m153.82 kB[39m[2m | [22m
+[32mchunk-H6TF2NWY.js[39m  [2m | [22m[2m-[22m                                               [2m | [22m [36m39.79 kB[39m[2m | [22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m                                            [2m | [22m  [36m2.98 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m                                           [2m | [22m [1mRaw size[22m
+[32mchunk-5GC6HCK7.js[39m  [2m | [22m[2mpublic-anonymous-template-success-page-component[22m[2m | [22m  [36m6.48 kB[39m[2m | [22m
+[32mchunk-I6AGLXBS.js[39m  [2m | [22m[2mpublic-anonymous-survey-routes[22m                  [2m | [22m[36m680 bytes[39m[2m | [22m
+
+Application bundle generation complete. [0.904 seconds] - 2026-06-08T12:29:12.802Z
+
+Page reload sent to client(s).
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m                                           [2m | [22m [1mRaw size[22m
+[32mstyles.css[39m         [2m | [22m[2mstyles[22m                                          [2m | [22m [36m32.85 kB[39m[2m | [22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m                                            [2m | [22m  [36m2.98 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m                                           [2m | [22m [1mRaw size[22m
+[32mchunk-UCYR2XSC.js[39m  [2m | [22m[2mpublic-anonymous-template-success-page-component[22m[2m | [22m  [36m7.05 kB[39m[2m | [22m
+[32mchunk-6LCJS7XQ.js[39m  [2m | [22m[2mpublic-anonymous-survey-routes[22m                  [2m | [22m[36m680 bytes[39m[2m | [22m
+
+Application bundle generation complete. [0.974 seconds] - 2026-06-08T13:48:29.347Z
+
+Page reload sent to client(s).

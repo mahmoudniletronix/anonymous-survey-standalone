@@ -10,6 +10,7 @@ import {
 import { ActivatedRoute, Router } from "@angular/router";
 import {
   AlertCircle,
+  Camera,
   ChevronLeft,
   ChevronRight,
   CircleStop,
@@ -46,6 +47,9 @@ import { PublicSurveyVoiceRecorderService } from "../services/public-survey-voic
 import { PublicAnonymousTemplateStore } from "../state/public-anonymous-template.store";
 
 const RATING_VALUES = [1, 2, 3, 4, 5] as const;
+const IMAGE_MAX_FILE_SIZE_BYTES = 5 * 1024 * 1024;
+const SUPPORTED_IMAGE_MIME_TYPES = new Set(["image/jpeg", "image/png", "image/webp"]);
+const SUPPORTED_IMAGE_EXTENSIONS = [".jpg", ".jpeg", ".png", ".webp"] as const;
 type PublicSurveyStep = "details" | "questions";
 
 @Component({
@@ -63,7 +67,9 @@ export class PublicAnonymousTemplatePageComponent implements OnInit, OnDestroy {
   private readonly router = inject(Router);
   private readonly i18n = inject(I18nService);
   private readonly publicSurveyBranding = inject(PublicSurveyBrandingService);
-  private readonly publicSurveyVoiceRecorder = inject(PublicSurveyVoiceRecorderService);
+  private readonly publicSurveyVoiceRecorder = inject(
+    PublicSurveyVoiceRecorderService,
+  );
 
   readonly alertIcon = AlertCircle;
   readonly languageIcon = Languages;
@@ -71,6 +77,7 @@ export class PublicAnonymousTemplatePageComponent implements OnInit, OnDestroy {
   readonly stopRecordingIcon = CircleStop;
   readonly removeVoiceIcon = Trash2;
   readonly uploadIcon = Upload;
+  readonly cameraIcon = Camera;
   readonly sendIcon = Send;
   readonly starIcon = Star;
   readonly ratingValues = RATING_VALUES;
@@ -210,7 +217,7 @@ export class PublicAnonymousTemplatePageComponent implements OnInit, OnDestroy {
 
   ngOnDestroy(): void {
     this.publicSurveyVoiceRecorder.cancel();
-    this.revokeAllVoiceObjectUrls(this.answers());
+    this.revokeAllAnswerObjectUrls(this.answers());
     this.publicAnonymousTemplateStore.clear();
     this.publicSurveyBranding.restoreAppBranding();
   }
@@ -243,7 +250,9 @@ export class PublicAnonymousTemplatePageComponent implements OnInit, OnDestroy {
     return depth ?? (this.isRootQuestion(question) ? 0 : 1);
   }
 
-  hasPotentialChildQuestion(question: PublicAnonymousTemplateQuestion): boolean {
+  hasPotentialChildQuestion(
+    question: PublicAnonymousTemplateQuestion,
+  ): boolean {
     const template = this.publicAnonymousTemplateStore.template();
     return template
       ? template.questionConditions.some(
@@ -392,6 +401,37 @@ export class PublicAnonymousTemplatePageComponent implements OnInit, OnDestroy {
     this.replaceAnswer(questionId, this.emptyAnswer());
   }
 
+  updateImageFile(questionId: string, event: Event): void {
+    const input =
+      event.target instanceof HTMLInputElement ? event.target : null;
+    const file = input?.files?.item(0) ?? null;
+
+    if (file === null) {
+      return;
+    }
+
+    if (!this.isSupportedImageFile(file)) {
+      if (input) {
+        input.value = "";
+      }
+      this.replaceAnswer(questionId, this.emptyAnswer());
+      this.navigationQuestionId.set(questionId);
+      this.validationError.set("publicAnonymousTemplates.imageFileInvalid");
+      return;
+    }
+
+    this.replaceAnswer(questionId, {
+      ...this.emptyAnswer(),
+      imageFile: file,
+      imageFileName: file.name,
+      imageObjectUrl: URL.createObjectURL(file),
+    });
+  }
+
+  clearImageAnswer(questionId: string): void {
+    this.replaceAnswer(questionId, this.emptyAnswer());
+  }
+
   isVoiceRecording(questionId: string): boolean {
     return this.publicSurveyVoiceRecorder.recordingQuestionId() === questionId;
   }
@@ -404,15 +444,26 @@ export class PublicAnonymousTemplatePageComponent implements OnInit, OnDestroy {
     return this.publicSurveyVoiceRecorder.isSupported();
   }
 
+  voiceRecordingMessageKey(): string | null {
+    return (
+      this.voiceRecordingError() ??
+      this.publicSurveyVoiceRecorder.supportErrorKey()
+    );
+  }
+
   voiceAnswerSourceLabel(questionId: string): string {
     const source = this.answerFor(questionId).voiceSource;
 
     if (source === "recording") {
-      return this.i18n.translate("publicAnonymousTemplates.recordedVoiceAnswer");
+      return this.i18n.translate(
+        "publicAnonymousTemplates.recordedVoiceAnswer",
+      );
     }
 
     if (source === "upload") {
-      return this.i18n.translate("publicAnonymousTemplates.uploadedVoiceAnswer");
+      return this.i18n.translate(
+        "publicAnonymousTemplates.uploadedVoiceAnswer",
+      );
     }
 
     return "";
@@ -483,7 +534,9 @@ export class PublicAnonymousTemplatePageComponent implements OnInit, OnDestroy {
     this.validationError.set(null);
 
     if (!this.areCustomInputsValid(template)) {
-      this.validationError.set("publicAnonymousTemplates.customInputsStepValidationError");
+      this.validationError.set(
+        "publicAnonymousTemplates.customInputsStepValidationError",
+      );
       return;
     }
 
@@ -508,6 +561,9 @@ export class PublicAnonymousTemplatePageComponent implements OnInit, OnDestroy {
     }
     if (answerType === QUESTION_ANSWER_TYPE.Complain) {
       return "complain";
+    }
+    if (answerType === QUESTION_ANSWER_TYPE.Image) {
+      return "image";
     }
 
     return "voice";
@@ -556,6 +612,9 @@ export class PublicAnonymousTemplatePageComponent implements OnInit, OnDestroy {
     }
     if (kind === "complain") {
       return answer.textAnswer.trim().length > 0;
+    }
+    if (kind === "image") {
+      return answer.imageFile !== null;
     }
 
     return answer.voiceFileName.length > 0;
@@ -662,6 +721,7 @@ export class PublicAnonymousTemplatePageComponent implements OnInit, OnDestroy {
       smileValue: kind === "smiles" ? answer.smileValue : null,
       textAnswer: kind === "complain" ? answer.textAnswer.trim() : null,
       voiceFileName: kind === "voice" ? answer.voiceFileName : null,
+      imageFile: kind === "image" ? answer.imageFile : null,
     };
   }
 
@@ -705,7 +765,13 @@ export class PublicAnonymousTemplatePageComponent implements OnInit, OnDestroy {
       previousAnswer?.voiceObjectUrl &&
       previousAnswer.voiceObjectUrl !== answer.voiceObjectUrl
     ) {
-      this.revokeVoiceObjectUrl(previousAnswer.voiceObjectUrl);
+      this.revokeObjectUrl(previousAnswer.voiceObjectUrl);
+    }
+    if (
+      previousAnswer?.imageObjectUrl &&
+      previousAnswer.imageObjectUrl !== answer.imageObjectUrl
+    ) {
+      this.revokeObjectUrl(previousAnswer.imageObjectUrl);
     }
 
     this.answers.update((answers) => ({
@@ -724,7 +790,7 @@ export class PublicAnonymousTemplatePageComponent implements OnInit, OnDestroy {
 
     this.answers.update((answers) => {
       const nextAnswers = this.visibleAnswerSubset(template, answers);
-      this.revokeRemovedVoiceObjectUrls(answers, nextAnswers);
+      this.revokeRemovedAnswerObjectUrls(answers, nextAnswers);
       return nextAnswers;
     });
     this.clampCurrentQuestionIndex();
@@ -749,7 +815,7 @@ export class PublicAnonymousTemplatePageComponent implements OnInit, OnDestroy {
     );
   }
 
-  private revokeRemovedVoiceObjectUrls(
+  private revokeRemovedAnswerObjectUrls(
     previousAnswers: Readonly<Record<string, PublicAnonymousAnswerDraft>>,
     nextAnswers: Readonly<Record<string, PublicAnonymousAnswerDraft>>,
   ): void {
@@ -758,25 +824,48 @@ export class PublicAnonymousTemplatePageComponent implements OnInit, OnDestroy {
 
       if (
         answer.voiceObjectUrl &&
-        (nextAnswer === undefined || nextAnswer.voiceObjectUrl !== answer.voiceObjectUrl)
+        (nextAnswer === undefined ||
+          nextAnswer.voiceObjectUrl !== answer.voiceObjectUrl)
       ) {
-        this.revokeVoiceObjectUrl(answer.voiceObjectUrl);
+        this.revokeObjectUrl(answer.voiceObjectUrl);
+      }
+
+      if (
+        answer.imageObjectUrl &&
+        (nextAnswer === undefined ||
+          nextAnswer.imageObjectUrl !== answer.imageObjectUrl)
+      ) {
+        this.revokeObjectUrl(answer.imageObjectUrl);
       }
     });
   }
 
-  private revokeAllVoiceObjectUrls(
+  private revokeAllAnswerObjectUrls(
     answers: Readonly<Record<string, PublicAnonymousAnswerDraft>>,
   ): void {
     Object.values(answers).forEach((answer) => {
       if (answer.voiceObjectUrl) {
-        this.revokeVoiceObjectUrl(answer.voiceObjectUrl);
+        this.revokeObjectUrl(answer.voiceObjectUrl);
+      }
+      if (answer.imageObjectUrl) {
+        this.revokeObjectUrl(answer.imageObjectUrl);
       }
     });
   }
 
-  private revokeVoiceObjectUrl(objectUrl: string): void {
+  private revokeObjectUrl(objectUrl: string): void {
     URL.revokeObjectURL(objectUrl);
+  }
+
+  private isSupportedImageFile(file: File): boolean {
+    return (
+      file.size > 0 &&
+      file.size <= IMAGE_MAX_FILE_SIZE_BYTES &&
+      SUPPORTED_IMAGE_MIME_TYPES.has(file.type) &&
+      SUPPORTED_IMAGE_EXTENSIONS.some((extension) =>
+        file.name.toLowerCase().endsWith(extension),
+      )
+    );
   }
 
   private padTimerValue(value: number): string {
@@ -973,6 +1062,9 @@ export class PublicAnonymousTemplatePageComponent implements OnInit, OnDestroy {
       voiceFileName: "",
       voiceObjectUrl: "",
       voiceSource: null,
+      imageFile: null,
+      imageFileName: "",
+      imageObjectUrl: "",
     };
   }
 

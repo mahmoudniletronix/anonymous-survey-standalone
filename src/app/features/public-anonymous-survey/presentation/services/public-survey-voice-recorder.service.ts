@@ -35,6 +35,7 @@ export class PublicSurveyVoiceRecorderService {
 
   isSupported(): boolean {
     return (
+      this.isSecureContext() &&
       typeof navigator !== "undefined" &&
       navigator.mediaDevices !== undefined &&
       typeof navigator.mediaDevices.getUserMedia === "function" &&
@@ -42,12 +43,22 @@ export class PublicSurveyVoiceRecorderService {
     );
   }
 
+  supportErrorKey(): string | null {
+    if (this.isSupported()) {
+      return null;
+    }
+
+    return this.isSecureContext()
+      ? "publicAnonymousTemplates.voiceRecordingUnsupported"
+      : "publicAnonymousTemplates.voiceRecordingSecureContextRequired";
+  }
+
   async start(questionId: string): Promise<void> {
     this.errorKeySignal.set(null);
     this.recordingElapsedSecondsSignal.set(0);
 
     if (!this.isSupported()) {
-      this.errorKeySignal.set("publicAnonymousTemplates.voiceRecordingUnsupported");
+      this.errorKeySignal.set(this.supportErrorKey());
       return;
     }
 
@@ -150,6 +161,10 @@ export class PublicSurveyVoiceRecorderService {
 
   private fallbackMimeType(): string {
     return "audio/webm";
+  }
+
+  private isSecureContext(): boolean {
+    return typeof window !== "undefined" && window.isSecureContext === true;
   }
 
   private recordingFileName(mimeType: string): string {

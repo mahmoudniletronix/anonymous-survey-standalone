@@ -48,14 +48,21 @@ const TRANSLATIONS: Record<Language, Record<string, string>> = {
     'publicAnonymousTemplates.value': 'Score',
     'publicAnonymousTemplates.textAnswerPlaceholder': 'Write your answer',
     'publicAnonymousTemplates.voiceUpload': 'Upload voice answer',
+    'publicAnonymousTemplates.imageUpload': 'Upload image answer',
+    'publicAnonymousTemplates.imageCapture': 'Take photo',
+    'publicAnonymousTemplates.imageFileHint': 'JPG, PNG, or WEBP up to 5 MB.',
     'publicAnonymousTemplates.startRecordingAction': 'Record answer',
     'publicAnonymousTemplates.stopRecordingAction': 'Stop recording',
     'publicAnonymousTemplates.recordingInProgress': 'Recording...',
     'publicAnonymousTemplates.recordedVoiceAnswer': 'Recorded voice answer',
     'publicAnonymousTemplates.uploadedVoiceAnswer': 'Uploaded voice answer',
+    'publicAnonymousTemplates.uploadedImageAnswer': 'Uploaded image answer',
     'publicAnonymousTemplates.removeVoiceAction': 'Remove',
+    'publicAnonymousTemplates.removeImageAction': 'Remove',
     'publicAnonymousTemplates.voiceRecordingUnsupported':
       'Voice recording is not supported in this browser.',
+    'publicAnonymousTemplates.voiceRecordingSecureContextRequired':
+      'Voice recording requires HTTPS or localhost. Open this survey through a secure link to use the microphone.',
     'publicAnonymousTemplates.voicePermissionDenied':
       'Microphone permission was denied. Allow microphone access and try again.',
     'publicAnonymousTemplates.voiceRecordingError':
@@ -84,7 +91,11 @@ const TRANSLATIONS: Record<Language, Record<string, string>> = {
     'publicAnonymousTemplates.optionMismatch':
       'One selected option does not belong to its question.',
     'publicAnonymousTemplates.scaleValueInvalid': 'Rating scores must be from 1 to 5.',
+    'publicAnonymousTemplates.ratingScaleHint': '1 is the lowest rating and 5 is the highest rating.',
     'publicAnonymousTemplates.voiceRequired': 'Voice answers require a selected voice file.',
+    'publicAnonymousTemplates.imageRequired': 'Image answers require a selected image file.',
+    'publicAnonymousTemplates.imageFileInvalid':
+      'Only JPG, PNG, or WEBP images up to 5 MB are allowed.',
     'publicAnonymousTemplates.textRequired': 'Text answers cannot be empty.',
     'publicAnonymousTemplates.successEyebrow': 'Response submitted',
     'publicAnonymousTemplates.successTitle': 'Thank you for your feedback',
@@ -137,14 +148,21 @@ const TRANSLATIONS: Record<Language, Record<string, string>> = {
     'publicAnonymousTemplates.value': 'القيمة',
     'publicAnonymousTemplates.textAnswerPlaceholder': 'اكتب إجابتك',
     'publicAnonymousTemplates.voiceUpload': 'إرفاق إجابة صوتية',
+    'publicAnonymousTemplates.imageUpload': 'إرفاق صورة',
+    'publicAnonymousTemplates.imageCapture': 'تصوير صورة',
+    'publicAnonymousTemplates.imageFileHint': 'JPG أو PNG أو WEBP حتى 5 ميجابايت.',
     'publicAnonymousTemplates.startRecordingAction': 'تسجيل إجابة',
     'publicAnonymousTemplates.stopRecordingAction': 'إيقاف التسجيل',
     'publicAnonymousTemplates.recordingInProgress': 'جاري التسجيل...',
     'publicAnonymousTemplates.recordedVoiceAnswer': 'إجابة صوتية مسجلة',
     'publicAnonymousTemplates.uploadedVoiceAnswer': 'إجابة صوتية مرفوعة',
+    'publicAnonymousTemplates.uploadedImageAnswer': 'صورة مرفوعة',
     'publicAnonymousTemplates.removeVoiceAction': 'حذف',
+    'publicAnonymousTemplates.removeImageAction': 'حذف',
     'publicAnonymousTemplates.voiceRecordingUnsupported':
       'تسجيل الصوت غير مدعوم في هذا المتصفح.',
+    'publicAnonymousTemplates.voiceRecordingSecureContextRequired':
+      'تسجيل الصوت يحتاج HTTPS أو localhost. افتح الاستبيان من رابط آمن لاستخدام الميكروفون.',
     'publicAnonymousTemplates.voicePermissionDenied':
       'تم رفض صلاحية الميكروفون. اسمح باستخدام الميكروفون وحاول مرة أخرى.',
     'publicAnonymousTemplates.voiceRecordingError':
@@ -168,7 +186,11 @@ const TRANSLATIONS: Record<Language, Record<string, string>> = {
     'publicAnonymousTemplates.customInputValidationError': 'إحدى بيانات العميل غير صحيحة.',
     'publicAnonymousTemplates.optionMismatch': 'أحد الاختيارات لا يتبع السؤال الخاص به.',
     'publicAnonymousTemplates.scaleValueInvalid': 'التقييم يجب أن يكون من 1 إلى 5.',
+    'publicAnonymousTemplates.ratingScaleHint': '1 أقل تقييم و5 أعلى تقييم.',
     'publicAnonymousTemplates.voiceRequired': 'الإجابة الصوتية تتطلب اختيار ملف صوتي.',
+    'publicAnonymousTemplates.imageRequired': 'صورة الإجابة مطلوبة لهذا السؤال.',
+    'publicAnonymousTemplates.imageFileInvalid':
+      'يجب رفع صورة JPG أو PNG أو WEBP بحجم لا يزيد عن 5 ميجابايت.',
     'publicAnonymousTemplates.textRequired': 'الإجابة النصية لا يمكن أن تكون فارغة.',
     'publicAnonymousTemplates.successEyebrow': 'تم إرسال التقييم',
     'publicAnonymousTemplates.successTitle': 'شكرًا لمشاركتك',

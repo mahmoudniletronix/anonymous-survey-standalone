@@ -7,8 +7,8 @@
     >
       <div class="flex min-w-0 items-center justify-end">
         <img
-          class="h-auto w-[8.75rem] max-w-[52vw] shrink-0 object-contain transition duration-300 hover:scale-[1.02] sm:w-[12rem]"
-          src="images/logo_ar.webp"
+          class="h-12 w-auto max-w-[28vw] shrink-0 object-contain transition duration-300 hover:scale-[1.02] sm:h-14"
+          src="images/chg-logo.png"
           [attr.alt]="'publicAnonymousTemplates.cleopatraLogoAlt' | t"
         />
       </div>
@@ -262,75 +262,85 @@
                   }
 
                   @case ("starRating") {
-                    <div
-                      class="inline-flex max-w-full flex-wrap overflow-hidden rounded-lg border border-slate-200 bg-white"
-                    >
-                      @for (value of ratingValues; track value) {
-                        <button
-                          type="button"
-                          class="public-star-rating-button relative inline-flex h-11 min-w-14 items-center justify-center gap-1 overflow-hidden border-e border-slate-200 px-3 text-sm font-bold transition duration-200 last:border-e-0 hover:bg-amber-50"
-                          [class.public-star-rating-button-selected]="
-                            isStarRatingSelected(
-                              question.anonymousTemplateQuestionId,
-                              value
-                            )
-                          "
-                          [class.bg-amber-50]="
-                            isStarRatingSelected(
-                              question.anonymousTemplateQuestionId,
-                              value
-                            )
-                          "
-                          [class.text-amber-700]="
-                            isStarRatingSelected(
-                              question.anonymousTemplateQuestionId,
-                              value
-                            )
-                          "
-                          (click)="
-                            setStarRatingAnswer(
-                              question.anonymousTemplateQuestionId,
-                              value
-                            )
-                          "
-                        >
-                          <app-icon [icon]="starIcon" [size]="15" />
-                          {{ value }}
-                        </button>
-                      }
+                    <div class="space-y-2">
+                      <div
+                        class="inline-flex max-w-full flex-wrap overflow-hidden rounded-lg border border-slate-200 bg-white"
+                      >
+                        @for (value of ratingValues; track value) {
+                          <button
+                            type="button"
+                            class="public-star-rating-button relative inline-flex h-11 min-w-14 items-center justify-center gap-1 overflow-hidden border-e border-slate-200 px-3 text-sm font-bold transition duration-200 last:border-e-0 hover:bg-amber-50"
+                            [class.public-star-rating-button-selected]="
+                              isStarRatingSelected(
+                                question.anonymousTemplateQuestionId,
+                                value
+                              )
+                            "
+                            [class.bg-amber-50]="
+                              isStarRatingSelected(
+                                question.anonymousTemplateQuestionId,
+                                value
+                              )
+                            "
+                            [class.text-amber-700]="
+                              isStarRatingSelected(
+                                question.anonymousTemplateQuestionId,
+                                value
+                              )
+                            "
+                            (click)="
+                              setStarRatingAnswer(
+                                question.anonymousTemplateQuestionId,
+                                value
+                              )
+                            "
+                          >
+                            <app-icon [icon]="starIcon" [size]="15" />
+                            {{ value }}
+                          </button>
+                        }
+                      </div>
+                      <p class="text-[11px] font-semibold text-slate-500">
+                        {{ "publicAnonymousTemplates.ratingScaleHint" | t }}
+                      </p>
                     </div>
                   }
 
                   @case ("smiles") {
-                    <div
-                      class="inline-flex max-w-full flex-wrap overflow-hidden rounded-lg border border-slate-200 bg-white"
-                    >
-                      @for (value of ratingValues; track value) {
-                        <button
-                          type="button"
-                          class="h-11 min-w-14 border-e border-slate-200 px-3 text-sm font-bold transition duration-200 last:border-e-0 hover:bg-emerald-50"
-                          [class.bg-emerald-50]="
-                            isSmileSelected(
-                              question.anonymousTemplateQuestionId,
-                              value
-                            )
-                          "
-                          [class.text-emerald-700]="
-                            isSmileSelected(
-                              question.anonymousTemplateQuestionId,
-                              value
-                            )
-                          "
-                          (click)="
-                            setSmileAnswer(
-                              question.anonymousTemplateQuestionId,
-                              value
-                            )
-                          "
-                        >
-                          {{ value }}
-                        </button>
-                      }
+                    <div class="space-y-2">
+                      <div
+                        class="inline-flex max-w-full flex-wrap overflow-hidden rounded-lg border border-slate-200 bg-white"
+                      >
+                        @for (value of ratingValues; track value) {
+                          <button
+                            type="button"
+                            class="h-11 min-w-14 border-e border-slate-200 px-3 text-sm font-bold transition duration-200 last:border-e-0 hover:bg-emerald-50"
+                            [class.bg-emerald-50]="
+                              isSmileSelected(
+                                question.anonymousTemplateQuestionId,
+                                value
+                              )
+                            "
+                            [class.text-emerald-700]="
+                              isSmileSelected(
+                                question.anonymousTemplateQuestionId,
+                                value
+                              )
+                            "
+                            (click)="
+                              setSmileAnswer(
+                                question.anonymousTemplateQuestionId,
+                                value
+                              )
+                            "
+                          >
+                            {{ value }}
+                          </button>
+                        }
+                      </div>
+                      <p class="text-[11px] font-semibold text-slate-500">
+                        {{ "publicAnonymousTemplates.ratingScaleHint" | t }}
+                      </p>
                     </div>
                   }
 
@@ -421,11 +431,11 @@
                         </label>
                       </div>
 
-                      @if (voiceRecordingError()) {
+                      @if (voiceRecordingMessageKey(); as messageKey) {
                         <p
                           class="mt-3 text-[11px] font-semibold text-[#D94B5A]"
                         >
-                          {{ voiceRecordingError() ?? "" | t }}
+                          {{ messageKey | t }}
                         </p>
                       }
 
@@ -481,6 +491,119 @@
                                   .voiceObjectUrl
                               "
                             ></audio>
+                          }
+                        </div>
+                      }
+                    </div>
+                  }
+
+                  @case ("image") {
+                    <div
+                      class="rounded-lg border border-dashed border-slate-300 bg-slate-50 p-4 transition duration-200 hover:border-[#11A7C9] hover:bg-[#F5FCFE]"
+                    >
+                      <div class="flex flex-col gap-2 sm:flex-row">
+                        <label
+                          class="inline-flex h-11 w-full cursor-pointer items-center justify-center gap-2 rounded-lg bg-[#11A7C9] px-4 text-xs font-extrabold text-white shadow-sm transition duration-200 hover:bg-[#0D9FC0] sm:w-auto"
+                        >
+                          <app-icon [icon]="cameraIcon" [size]="16" />
+                          {{ "publicAnonymousTemplates.imageCapture" | t }}
+                          <input
+                            class="sr-only"
+                            type="file"
+                            accept="image/jpeg,image/png,image/webp"
+                            capture="environment"
+                            (change)="
+                              updateImageFile(
+                                question.anonymousTemplateQuestionId,
+                                $event
+                              )
+                            "
+                          />
+                        </label>
+                        <label
+                          class="inline-flex h-11 w-full cursor-pointer items-center justify-center gap-2 rounded-lg border border-slate-200 bg-white px-4 text-xs font-extrabold text-slate-700 transition duration-200 hover:border-[#11A7C9] hover:text-[#0D9FC0] sm:w-auto"
+                        >
+                          <app-icon [icon]="uploadIcon" [size]="16" />
+                          {{ "publicAnonymousTemplates.imageUpload" | t }}
+                          <input
+                            class="sr-only"
+                            type="file"
+                            accept=".jpg,.jpeg,.png,.webp,image/jpeg,image/png,image/webp"
+                            (change)="
+                              updateImageFile(
+                                question.anonymousTemplateQuestionId,
+                                $event
+                              )
+                            "
+                          />
+                        </label>
+                        <span
+                          class="inline-flex min-h-11 items-center rounded-lg bg-white px-3 text-[11px] font-bold leading-5 text-slate-500 ring-1 ring-slate-200"
+                        >
+                          {{ "publicAnonymousTemplates.imageFileHint" | t }}
+                        </span>
+                      </div>
+
+                      @if (
+                        answerFor(question.anonymousTemplateQuestionId)
+                          .imageFileName
+                      ) {
+                        <div
+                          class="mt-3 rounded-lg border border-slate-200 bg-white p-3"
+                        >
+                          <div
+                            class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between"
+                          >
+                            <div class="min-w-0">
+                              <p
+                                class="text-[11px] font-extrabold text-slate-500"
+                              >
+                                {{
+                                  "publicAnonymousTemplates.uploadedImageAnswer"
+                                    | t
+                                }}
+                              </p>
+                              <p
+                                class="mt-1 break-words text-xs font-bold text-[#0D9FC0]"
+                              >
+                                {{
+                                  answerFor(
+                                    question.anonymousTemplateQuestionId
+                                  ).imageFileName
+                                }}
+                              </p>
+                            </div>
+                            <button
+                              type="button"
+                              class="inline-flex h-9 items-center justify-center gap-2 rounded-lg border border-slate-200 bg-white px-3 text-[11px] font-extrabold text-slate-600 transition duration-200 hover:border-[#D94B5A] hover:text-[#D94B5A]"
+                              (click)="
+                                clearImageAnswer(
+                                  question.anonymousTemplateQuestionId
+                                )
+                              "
+                            >
+                              <app-icon [icon]="removeVoiceIcon" [size]="14" />
+                              {{
+                                "publicAnonymousTemplates.removeImageAction" | t
+                              }}
+                            </button>
+                          </div>
+
+                          @if (
+                            answerFor(question.anonymousTemplateQuestionId)
+                              .imageObjectUrl
+                          ) {
+                            <img
+                              class="mt-3 max-h-64 w-full rounded-lg border border-slate-100 object-contain"
+                              [src]="
+                                answerFor(question.anonymousTemplateQuestionId)
+                                  .imageObjectUrl
+                              "
+                              [attr.alt]="
+                                'publicAnonymousTemplates.uploadedImageAnswer'
+                                  | t
+                              "
+                            />
                           }
                         </div>
                       }

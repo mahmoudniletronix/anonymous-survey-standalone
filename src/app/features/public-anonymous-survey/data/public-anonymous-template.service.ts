@@ -45,7 +45,7 @@ export class PublicAnonymousTemplateService {
     return this.http
       .post<PublicAnonymousSubmissionApiResponse>(
         `${this.anonTemplatesUrl}/${anonymousTemplateId}/responses`,
-        payload,
+        this.toSubmitFormData(payload),
         {
           context: new HttpContext()
             .set(SKIP_AUTH, true)
@@ -54,6 +54,54 @@ export class PublicAnonymousTemplateService {
         },
       )
       .pipe(map((response) => this.toSubmissionResult(response, anonymousTemplateId)));
+  }
+
+  private toSubmitFormData(payload: SubmitPublicAnonymousResponsePayload): FormData {
+    const formData = new FormData();
+
+    payload.customInputValues.forEach((customInput, index) => {
+      const prefix = `customInputValues[${index}]`;
+      formData.append(`${prefix}.customInputId`, customInput.customInputId);
+
+      if (customInput.stringValue !== null) {
+        formData.append(`${prefix}.stringValue`, customInput.stringValue);
+      }
+
+      if (customInput.integerValue !== null) {
+        formData.append(`${prefix}.integerValue`, String(customInput.integerValue));
+      }
+    });
+
+    payload.answers.forEach((answer, index) => {
+      const prefix = `answers[${index}]`;
+      formData.append(`${prefix}.anonymousTemplateQuestionId`, answer.anonymousTemplateQuestionId);
+
+      if (answer.selectedQuestionOptionId !== null) {
+        formData.append(`${prefix}.selectedQuestionOptionId`, answer.selectedQuestionOptionId);
+      }
+
+      if (answer.starRatingValue !== null) {
+        formData.append(`${prefix}.starRatingValue`, String(answer.starRatingValue));
+      }
+
+      if (answer.smileValue !== null) {
+        formData.append(`${prefix}.smileValue`, String(answer.smileValue));
+      }
+
+      if (answer.textAnswer !== null) {
+        formData.append(`${prefix}.textAnswer`, answer.textAnswer);
+      }
+
+      if (answer.voiceFileName !== null) {
+        formData.append(`${prefix}.voiceFileName`, answer.voiceFileName);
+      }
+
+      if (answer.imageFile !== null) {
+        formData.append(`${prefix}.imageFile`, answer.imageFile, answer.imageFile.name);
+      }
+    });
+
+    return formData;
   }
 
   private toTemplate(
