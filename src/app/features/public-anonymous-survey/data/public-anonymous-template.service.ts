@@ -6,8 +6,8 @@ import {
   SKIP_SUCCESS_TOAST,
 } from '../../../core/interceptors/error-toast.interceptor';
 import { SKIP_AUTH } from '../../../core/interceptors/auth.interceptor';
+import { APP_RUNTIME_CONFIG } from '../../../core/config/app-runtime-config';
 import { toScopeState } from '../../../shared/models/resource-scope.model';
-import { environment } from '../../../../environments/environment';
 import {
   PublicAnonymousTemplate,
   PublicAnonymousTemplateApiResponse,
@@ -28,7 +28,8 @@ import {
 @Injectable()
 export class PublicAnonymousTemplateService {
   private readonly http = inject(HttpClient);
-  private readonly anonTemplatesUrl = `${environment.apiBaseUrl}/api/anon-templates`;
+  private readonly runtimeConfig = inject(APP_RUNTIME_CONFIG);
+  private readonly anonTemplatesUrl = `${this.runtimeConfig.apiBaseUrl}/api/anon-templates`;
 
   getTemplate(anonymousTemplateId: string): Observable<PublicAnonymousTemplate> {
     return this.http

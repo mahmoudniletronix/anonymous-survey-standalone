@@ -1,0 +1,9 @@
+Runtime configuration
+
+After publishing, edit app-config.json beside index.html to change the API URL
+without rebuilding the Angular app.
+
+Example:
+{
+  "apiBaseUrl": "http://192.168.1.9:8011"
+}
