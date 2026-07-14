@@ -19,7 +19,8 @@ export const routes: Routes = [
   {
     path: '',
     pathMatch: 'full',
-    redirectTo: 'survey',
+    component: PublicAnonymousTemplatePageComponent,
+    providers: [PublicAnonymousTemplateService, PublicAnonymousTemplateStore],
   },
   {
     path: '**',
