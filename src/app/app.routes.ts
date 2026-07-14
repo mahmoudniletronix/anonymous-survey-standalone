@@ -5,16 +5,18 @@ import { PublicAnonymousTemplateStore } from './features/public-anonymous-survey
 
 export const routes: Routes = [
   {
-    path: 'survey',
-    component: PublicAnonymousTemplatePageComponent,
-    providers: [PublicAnonymousTemplateService, PublicAnonymousTemplateStore],
+    path: 'survey/:anonymousTemplateId/success',
+    redirectTo: ':anonymousTemplateId/success',
   },
   {
     path: 'survey/:anonymousTemplateId',
-    loadChildren: () =>
-      import('./features/public-anonymous-survey/public-anonymous-survey.routes').then(
-        (m) => m.PUBLIC_ANONYMOUS_SURVEY_ROUTES,
-      ),
+    pathMatch: 'full',
+    redirectTo: ':anonymousTemplateId',
+  },
+  {
+    path: 'survey',
+    pathMatch: 'full',
+    redirectTo: '',
   },
   {
     path: '',
@@ -23,7 +25,14 @@ export const routes: Routes = [
     providers: [PublicAnonymousTemplateService, PublicAnonymousTemplateStore],
   },
   {
+    path: ':anonymousTemplateId',
+    loadChildren: () =>
+      import('./features/public-anonymous-survey/public-anonymous-survey.routes').then(
+        (m) => m.PUBLIC_ANONYMOUS_SURVEY_ROUTES,
+      ),
+  },
+  {
     path: '**',
-    redirectTo: 'survey',
+    redirectTo: '',
   },
 ];

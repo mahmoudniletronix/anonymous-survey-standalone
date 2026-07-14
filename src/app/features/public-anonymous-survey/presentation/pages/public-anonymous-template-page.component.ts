@@ -655,7 +655,7 @@ export class PublicAnonymousTemplatePageComponent implements OnInit, OnDestroy {
       payload,
       (submission) => {
         void this.router.navigate(
-          ["/survey", template.anonymousTemplateId, "success"],
+          ["/", template.anonymousTemplateId, "success"],
           {
             queryParams: {
               responseId: submission.anonymousSurveyResponseId,
